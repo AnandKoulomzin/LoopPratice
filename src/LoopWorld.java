@@ -66,25 +66,23 @@ public class LoopWorld {
     }
 
     public void pattern7() {
-        System.out.println("****** Pattern 7:");
-        for (int i=6; i>1; i=i-1) {
-            for (int x = 1; x < i; x++) {
-                System.out.print(x+ " ");
+        for (int i = 1; i <= 5; i++) {
+            for (int j = i; j <= 5; j++) {
+                System.out.print(i + " ");
             }
             System.out.println();
         }
-
     }
 
   public void pattern8(){
-                System.out.println("****** Pattern 8: ");
-                for (int i = 1; i < 6; i++) {
-                    for (int x = 0; x < i - 1; x++) {
-                        System.out.print(" ");
-                    }
-//            for (int p = 5; p > 1; p--) {
-                    System.out.println("*");
-//            }
-        }
+      for (int i = 0; i < 5; i++) {
+          for (int j = 0; j < i; j++) {
+              System.out.print(" ");
+          }
+          for (int k = i; k < 5; k++) {
+              System.out.print("*");
+          }
+          System.out.println();
+      }
     }
 }
